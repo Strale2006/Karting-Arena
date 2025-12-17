@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Karting Arena - Mesto gde brzina prelazi granice</title>
     <link rel="stylesheet" href="assets/css/style.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
     <meta name="description" content="Karting Arena — staze za amaterske i profesionalne vozače. Rezerviši vožnju, proslave i korporativne trke. Radno vreme i cenovnik."/>
 </head>
 <body>
-    <div class="header">
+    <div class="hero-sekcija">
         <ul>
             <li>
-                <a href="#">POČETNA</a>
+                <a href="#" class="aktivni-link">POČETNA</a>
             </li>
             <li>
                 <a href="kontakt.html">KONTAKT</a>
@@ -44,15 +44,15 @@
             <a href="staze.html"><input type="button" value="STAZE"></a>
         </div>
     </div>
-    <div class="main">
+    <main>
         <div class="o-kartinzima">
             <div class="kartinzi-opis">
                 <h2>O Našim Kartinzima</h2>
                 <p>Naši kartinzi su pažljivo odabrani da pruže maksimalnu sigurnost, pouzdanost i vrhunske performanse. Bez obzira da li ste početnik ili iskusni vozač, naši kartinzi omogućavaju zabavnu i adrenalinsku vožnju za sve uzraste. Redovno ih servisiramo i održavamo po najvišim standardima, tako da svaki krug na stazi bude besprekorno iskustvo. Uživajte u glatkoj vožnji, preciznom upravljanju i optimalnom ubrzanju dok savladavate naše staze. Za one koji žele više informacija o specifikacijama i vrstama kartinga, detaljnije možete saznati na posebnoj stranici.</p>
-                <a href="kontakt.html">
+                <a href="staze.html">
                     <button class="dugme-vise">
                         <p>Pročitaj Više</p>
-                        <i class="fa-solid fa-arrow-right"></i>
+                        <span class="fa-solid fa-arrow-right"></span>
                     </button>
                 </a>
             </div>
@@ -76,79 +76,82 @@
             <h2>Zasto je <span>Karting Arena</span> Najbolji Izbor za Tebe?</h2>
             <div class="zasto-grid">
                 <div class="kartica kartica1">
-                    <i class="fa-solid fa-user-tie"></i>
+                    <span class="fa-solid fa-user-tie"></span>
                     <h3>Profesionalni Instruktori</h3>
                     <p>Naši licencirani instruktori vode vas kroz svaku trku uz savete i tehniku koja podiže vašu vožnju na potpuno novi nivo.</p>
                 </div>
                 <div class="kartica kartica2">
-                    <i class="fa-solid fa-car-side"></i>
+                    <span class="fa-solid fa-car-side"></span>
                     <h3>Najkvalitetniji Kartinzi</h3>
                     <p>Vozite najmodernije kartinge održavane po najvišim standardima, uz maksimalnu sigurnost i performanse na koje se uvek možete osloniti.</p>
                 </div>
                 <div class="kartica kartica3">
-                    <i class="fa-solid fa-money-bill-1-wave"></i>
+                    <span class="fa-solid fa-money-bill-1-wave"></span>
                     <h3>Najpovoljnije Cene</h3>
                     <p>Kod nas dobijate vrhunsko karting iskustvo po fer ceni. Posebni paketi su kreirani za pojedince, grupe i proslave, tako da svako može uživati u adrenalinu bez kompromisa.</p>
                     <p>Bez skrivenih troškova i dodatnih naknada — samo čist užitak vožnje, profesionalna oprema i zabava za sve uzraste.</p>
                     <a href="kontakt.html">
                         <button class="dugme-vise">
                             <p>Zakaži Vožnju</p>
-                            <i class="fa-solid fa-arrow-right"></i>
+                            <span class="fa-solid fa-arrow-right"></span>
                         </button>
                     </a>
 
                 </div>
                 <div class="kartica kartica4">
-                    <i class="fa-solid fa-road"></i>
+                    <span class="fa-solid fa-road"></span>
                     <h3>Najduze Staze</h3>
                     <p>Naša staza spada među najduže u regionu i dizajnirana je tako da spoji brzinu, tehničke izazove i neprekidnu zabavu. Sa kombinacijom oštrih krivina i dugih pravaca, nudi idealan balans za sve nivoe vozača, pružajući trku koja svaki put ostavlja jak utisak i poziva na još jedan krug.</p>
                 </div>
             </div>
         </div>
-    </div>
+    </main>
     <div class="footer">
-        <div class="footer-leva-sekcija">
-            <img src="/assets/images/KartingArenaLogoNoBG.png" alt="Footer Logo">
-            <p>Najbolja karting lokacija u regionu.</p>
+        <div class="footer-sekcije">
+            <div class="footer-leva-sekcija">
+                <img src="/assets/images/KartingArenaLogoNoBG.png" alt="Footer Logo">
+                <p>Najbolja karting lokacija u regionu.</p>
+            </div>
+            <div class="footer-desna-sekcija">
+                <div class="navigacija-footer">
+                    <h2>KARTING</h2>
+                    <ul class="footer-lista">
+                        <li><a href="#">Početna</a></li>
+                        <li><a href="o-nama.html">O Nama</a></li>
+                        <li><a href="staze.html">Staze</a></li>
+                    </ul>   
+                </div>
+
+                <div class="resurs-footer">
+                    <h2>RESURSI</h2>
+                    <ul class="footer-lista">
+                        <li><a href="galerija.html">Galerija</a></li>
+                        <li><a href="kontakt.html">Kontakt</a></li>
+                        <li><a href="autor.html">Autor</a></li>
+
+                    </ul>  
+                </div>
+
+                <div class="kontakt-footer">
+                    <h2>KONTAKT</h2>
+                    <ul class="footer-lista">
+                        <li><a href="">strahinja.popovic.6.25@ict.edu.rs</a></li>
+                        <li><a href="">Zdravka Čelara 16, 11000 Beograd, Srbija</a></li>
+                        <li><a href="">+381(11) 3290 828</a></li>
+                        <li class="ikonice-footer">
+                            <a href="https://www.instagram.com/"><span class="fa-brands fa-instagram"></span></a>
+                            <a href="https://youtube.com/"><span class="fa-brands fa-youtube"></span></a>
+                            <a href="https://www.tiktok.com/"><span class="fa-brands fa-tiktok"></span></a>
+                            <a href="https://www.facebook.com/"><span class="fa-brands fa-facebook"></span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
-        <div class="footer-desna-sekcija">
-            <div class="navigacija-footer">
-                <h2>KARTING</h2>
-                <ul class="footer-lista">
-                    <li><a href="#">Početna</a></li>
-                    <li><a href="o-nama.html">O Nama</a></li>
-                    <li><a href="staze.html">Staze</a></li>
-                </ul>   
-            </div>
-
-            <div class="resurs-footer">
-                <h2>RESURSI</h2>
-                <ul class="footer-lista">
-                    <li><a href="galerija.html">Galerija</a></li>
-                    <li><a href="kontakt.html">Kontakt</a></li>
-                    <li><a href="autor.html">Autor</a></li>
-
-                </ul>  
-            </div>
-
-            <div class="kontakt-footer">
-                <h2>KONTAKT</h2>
-                <ul class="footer-lista">
-                    <li><a href="">strahinja.popovic.6.25@ict.edu.rs</a></li>
-                    <li><a href="">Zdravka Čelara 16, 11000 Beograd, Srbija</a></li>
-                    <li><a href="">+381(11) 3290 828</a></li>
-                    <li class="ikonice-footer">
-                        <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="https://youtube.com/"><i class="fa-brands fa-youtube"></i></a>
-                        <a href="https://www.tiktok.com/"><i class="fa-brands fa-tiktok"></i></a>
-                        <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
-                    </li>
-                </ul>
-            </div>
+        <div class="footer-copyright">
+            <p>Copyright ©2025 Strahinja Popovic 06/25</p>
         </div>
     </div>
-    <div class="footer-copyright">
-        
-    </div>
+
 </body>
 </html>

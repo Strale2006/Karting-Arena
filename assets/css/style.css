@@ -7,8 +7,7 @@
     font-family: "Montserrat", sans-serif;
 }
 
-.header{
-    /* background-color: #000; */
+.hero-sekcija{
     text-align: center;
     background-image: url("/assets/images/FormulaPozadina.jpg");
     background-size: cover;
@@ -16,7 +15,7 @@
     border-bottom: #ff0000 1px solid;
 }
 
-.header ul{
+.hero-sekcija ul{
     display: flex;
     list-style-type: none;
     justify-content: center;
@@ -25,19 +24,19 @@
     padding: 15px 0;
 }
 
-.header ul li a{
+.hero-sekcija ul li a{
     text-decoration: none;
     color: #fff;
     font-size: 18px;
-    animation: 2s fadeTranzicija;
+    animation: 2s fadeAnimacija;
 }
 
-.header ul li{
+.hero-sekcija ul li{
     transition: 0.5s;
     text-underline-offset: 5px;
 }
 
-.header ul li:hover{
+.hero-sekcija ul li:hover{
     text-decoration: underline;
     text-decoration-color: #fff;
 }
@@ -46,17 +45,17 @@
     width: 200px;
 }
 
-.header h1, .header h2{
+.hero-sekcija h1, .hero-sekcija h2{
     color: #fff;
-    animation: 1.5s fadeTranzicija ;
+    animation: 1.5s fadeAnimacija ;
     text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.8);
 }
 
-.header h1{
+.hero-sekcija h1{
     font-size: 55px;
 }
 
-.header h2{
+.hero-sekcija h2{
     font-size: 25px;
     font-weight: 500;
 }
@@ -70,7 +69,7 @@
     display: flex;
     justify-content: center;
     gap: 35px;
-    animation: 1.5s fadeTranzicija ease;
+    animation: 1.5s fadeAnimacija ease;
 }
 
 .hero-dugmici input{
@@ -94,7 +93,44 @@
     transform: scale(1.1);
 }
 
-.main{
+.header{
+    background-color: #0f0f0f;
+    text-align: center;
+    border-bottom: #ff0000 1px solid;
+}
+
+.header ul{
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    align-items: center;
+    gap: 45px;
+    padding: 15px 0;
+}
+
+.header ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    animation: 2s fadeAnimacija;
+}
+
+.header ul li{
+    transition: 0.5s;
+    text-underline-offset: 5px;
+}
+
+.header ul li:hover{
+    text-decoration: underline;
+    text-decoration-color: #fff;
+}
+
+.aktivni-link{
+    color: #ff0000 !important;
+    text-decoration: underline !important;
+}
+
+main{
     background-color: #1f1f1f;
     color: #fff;
     padding-top: 80px;
@@ -203,7 +239,7 @@
     font-size: 24px;
 }
 
-.kartica i{
+.kartica span{
     font-size: 35px;
 }
 
@@ -235,7 +271,7 @@
     top: -5px;
 }
 
-.kartica button i{
+.kartica button span{
     font-size: 20px;
 }
 
@@ -267,12 +303,18 @@
     border-top: 1px solid #ff0000;
     background: linear-gradient(135deg, #0f0f0f, #1a1a1a 50%, #0f0f0f);
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     color: #fff;
+}
+
+.footer-sekcije{
+    display: flex;
+    justify-content: space-between;
     padding: 30px 60px;
 }
 
-.footer ul{
+.footer-sekcije ul{
     list-style-type: none;
 }
 
@@ -304,10 +346,10 @@
 }
 
 .footer-copyright{
-    background: linear-gradient(135deg, #0f0f0f, #1a1a1a 50%, #0f0f0f);
+    text-align: center;
 }
 
-.footer a{
+.footer-sekcije a{
     color: #fff;
     text-decoration: none;
     cursor: pointer;
@@ -327,15 +369,215 @@
     gap: 18px;
 }
 
-.footer li a{
+.footer-sekcije li a{
     transition: 0.3s ;
 }
 
-.footer li a:hover{
+.footer-sekcije li a:hover{
     color: red;
 }
 
-@keyframes fadeTranzicija {
+/* KONTAKT STRANICA */
+
+.kontakt-tekst{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+}
+
+.kontakt-opis{
+    text-align: center;
+}
+
+.kontakt-opis{
+    margin-top: 40px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.kontakt-opis h1{
+    font-size: 45px;
+}
+
+.kontakt-form-sekcija{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    width: 100%;
+    margin: 80px 0;
+}
+
+#forma-kontakt{
+    background-color: #0f0f0f;
+    padding: 35px;
+    border-radius: 15px;
+    min-width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#forma-kontakt h3, .info-sekcija-biznis h3, .radno-vreme h3{
+    width: 100%;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #636161;
+    font-weight: 600;
+}
+
+#forma-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px 30px;
+}
+
+#form-grupa{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+#form-grupa label{
+    font-size: 14px;
+}
+
+#form-grupa input{
+    padding: 13px 10px;
+    border-radius: 6px;
+    border: none;
+    font-weight: 500;
+    background-color: #1a1a1a;
+    color: #8a8a8a;
+}
+
+#form-grupa input::placeholder{
+    color: #8a8a8a;
+    font-weight: 500;
+}
+
+#form-grupa input:focus {
+    border: 1px solid #e53935;
+    box-shadow: 0 0 0 2px rgba(255, 59, 48, 0.4);
+    outline: none;
+}
+
+#form-grupa input:hover{
+    background-color: #1e1e1e;
+}
+
+#forma-kontakt button{
+    width: 100%;
+    margin-top: 30px;
+    padding: 13px;
+    border-radius: 6px;
+    border: none;
+    font-weight: 500;
+    font-size: 16px;
+    background-color: #1a1a1a;
+    color: #f5f5f5;
+    cursor: pointer;
+}
+
+#forma-kontakt button:hover{
+    background-color: #1e1e1e;
+}
+
+.google-mapa{
+   border-radius: 10px; 
+   margin-bottom: 80px;
+   width: 81%;
+}
+
+.kontakt-info{
+    border-radius: 15px;
+    min-width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 15px;
+    
+}
+
+.info-sekcija-biznis{
+    background-color: #0f0f0f;
+    border-radius: 10px;
+    padding: 35px;
+    height: 50%;
+}
+
+.radno-vreme{
+    background-color: #0f0f0f;
+    border-radius: 10px;
+    padding: 35px;
+    height: 50%;
+}
+
+.info-polja{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.info-element{
+    display: flex;
+    gap: 15px;
+}
+
+.info-element span{
+    color: #ff0000;
+}
+
+.info-element p span{
+    color: #fff;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.info-element p span:hover{
+    color: #ff0000;
+}
+
+/* AUTOR STRANICA */
+
+.autor-main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.autor-main h1{
+    font-size: 45px;
+}
+
+.autor-main h2{
+    font-size: 32px;
+}
+
+.autor-organizacija{
+    margin: 80px 0;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 130px;
+}
+
+.autor-organizacija img{
+    width: 300px;
+    border-radius: 10px;
+}
+
+.o-meni{
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+}
+
+@keyframes fadeAnimacija {
   0% {
     transform: translateY(100%);
     opacity: 0;
