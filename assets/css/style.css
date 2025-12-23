@@ -168,6 +168,12 @@
 .o-kartinzima img{
     max-width: 600px;
     border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.o-kartinzima img:hover{
+    transform: translateY(-4px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.4);
 }
 
 .najuzbudljivije-trke{
@@ -197,6 +203,12 @@
 .najuzbudljivije-slike img{
     max-width: 250px;
     border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.najuzbudljivije-slike img:hover{
+    transform: translateY(-4px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.4);
 }
 
 .zasto-mi{
@@ -388,6 +400,7 @@
 
 .kontakt-opis{
     text-align: center;
+    animation: 1.5s fadeAnimacija;
 }
 
 .kontakt-opis{
@@ -408,6 +421,7 @@
     gap: 30px;
     width: 100%;
     margin: 80px 0;
+    animation: 1.5s fadeAnimacija;
 }
 
 #forma-kontakt{
@@ -489,6 +503,7 @@
    border-radius: 10px; 
    margin-bottom: 80px;
    width: 81%;
+   animation: 1.5s fadeAnimacija;
 }
 
 .kontakt-info{
@@ -550,23 +565,38 @@
 
 .autor-main h1{
     font-size: 45px;
+    animation: 1.5s fadeAnimacija;
 }
 
 .autor-main h2{
     font-size: 32px;
 }
 
+.autor-main span{
+    color: #ff0000;
+}
+
 .autor-organizacija{
     margin: 80px 0;
     width: 80%;
     display: flex;
-    justify-content: space-between;
-    padding: 0 130px;
+    justify-content: center;
+    gap: 150px;
+    padding: 35px;
+    border-radius: 14px;
+    background: #0f0f0f;
+    animation: 1.5s fadeAnimacija;
 }
 
 .autor-organizacija img{
     width: 300px;
     border-radius: 10px;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.autor-organizacija img:hover{
+    transform: translateY(-4px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.4);
 }
 
 .o-meni{
@@ -597,6 +627,11 @@
 
 .galerija-pozadina h1{
     font-size: 45px;
+    animation: 1.5s fadeAnimacija;
+}
+
+.galerija-pozadina p{
+    animation: 1.5s fadeAnimacija;
 }
 
 .galerija-grid{
@@ -605,7 +640,6 @@
     padding: 80px 100px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    /* grid-template-rows: repeat(3, 300px); */
     gap: 50px;
 }
 
@@ -613,6 +647,13 @@
     width: 100%;
     height: 100%;
     border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: 1.5s fadeAnimacija;
+}
+
+.galerija-grid img:hover{
+    transform: translateY(-4px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.4);
 }
 
 .vidi-jos{
@@ -656,7 +697,7 @@
 }
 
 .o-nama-pozadina{
-    background: url("../images/ONamaPozadina.jpg");
+    background: url("../images/GalerijaPozadina.jpg");
     background-size: cover;
     background-position: 50% 50%;
     height: 200px;
@@ -671,17 +712,17 @@
 
 .o-nama-pozadina h1{
     font-size: 45px;
+    animation: 1.5s fadeAnimacija;
+}
+
+.o-nama-pozadina p{
+    animation: 1.5s fadeAnimacija;
 }
 
 #uspomene{
     display: flex;
     gap: 80px;
     padding: 80px 100px 0;
-}
-
-#uspomene img{
-    width: 45%;
-    border-radius: 12px;
 }
 
 .uspomene-opis h2{
@@ -741,9 +782,15 @@
     padding: 80px 100px;
 }
 
-#misija img{
+.o-nama-img{
     width: 45%;
     border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.o-nama-img:hover{
+    transform: translateY(-4px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.4);
 }
 
 .misija-opis h2{
@@ -759,6 +806,172 @@
     flex-direction: column;
     justify-content: center;
     gap: 15px;
+}
+
+/* STAZE STRANICA */
+
+.staze-pozadina{
+    background: url("../images/GalerijaPozadina.jpg");
+    background-size: cover;
+    background-position: 50% 50%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-direction: column;
+    color: #fff;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.8);
+    text-align: center;
+}
+
+.staze-pozadina h1{
+    font-size: 45px;
+    animation: 1.5s fadeAnimacija;
+}
+
+.staze-pozadina p{
+    animation: 1.5s fadeAnimacija;
+}
+
+#staze-main{
+    background-color: #1f1f1f;
+    color: #fff;
+}
+
+.staza-content{
+    padding: 80px 100px 0;
+    display: flex;
+    gap: 80px;
+}
+
+.staza-content img{
+    width: 45%;
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.staza-content img:hover{
+    transform: translateY(-4px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.4);
+}
+
+.staza-opis{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+}
+
+.staza-naslov{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.staza-opis h2{
+    font-size: 40px;
+}
+
+.staza-opis p{
+    font-size: 18px;
+}
+
+.staza-opis ul{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+    padding: 20px 10px;
+}
+
+.staza-opis ul li{
+    text-align: center;
+}
+
+.staza-opis ul li p{
+    color: #8a8a8a;
+}
+
+#staza-separator{
+    margin-top: 80px;
+}
+
+.nasi-kartinzi{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 80px;
+    padding: 30px 100px;
+    background-color: #0f0f0f;
+    gap: 30px;
+}
+
+.nasi-kartinzi h2{
+    font-size: 32px;
+}
+
+.nasi-kartinzi p{
+    font-size: 18px;
+}
+
+.kartinzi-sekcija{
+    padding: 80px 100px;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.karting-kartica{
+    display: flex;
+    flex-direction: column;
+    border-radius: 24px;
+    border: 1px solid #2a2a2a;
+    padding: 18px;
+    max-width: 420px;
+    background-color: #0f0f0f;
+    gap: 14px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.karting-kartica:hover{
+    transform: translateY(-4px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.4);
+}
+
+.karting-kartica img{
+    width: 100%;
+    border-radius: 16px;
+    object-fit: cover;
+}
+
+.karting-kartica h3{
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.karting-opis{
+    font-size: 16px;
+    line-height: 1.5;
+    color: #ccc;
+}
+
+.karting-specs{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.karting-specs span{
+    font-size: 14px;
+    padding: 6px 12px;
+    border-radius: 20px;
+    background-color: #1b1b1b;
+    border: 1px solid #2f2f2f;
+    color: #eee;
 }
 
 @keyframes fadeAnimacija {
