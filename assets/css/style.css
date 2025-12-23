@@ -97,6 +97,51 @@
     background-color: #0f0f0f;
     text-align: center;
     border-bottom: #ff0000 1px solid;
+    position: relative;
+}
+
+.zip-link{
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 14px;
+    color: #aaa;
+    text-decoration: none;
+    border: 1px solid #333;
+    padding: 6px 12px;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+.zip-link:hover{
+    color: #fff;
+    border-color: #ff0000;
+}
+
+.hero-zip-relative{
+    position: relative;
+}
+
+.zip-link-pocetna{
+    position: absolute;
+    right: 20px;
+    top: 65px;
+    transform: translateY(-50%);
+    font-size: 14px;
+    color: #fff;
+    text-decoration: none;
+    border: 1px solid rgb(179, 163, 163);
+    padding: 6px 12px;
+    border-radius: 20px;
+    transition: 0.3s;
+    background-color: #ff0000;
+    font-weight: 500;
+}
+
+.zip-link-pocetna:hover{
+    color: #fff;
+    border-color: #000;
 }
 
 .header ul{
